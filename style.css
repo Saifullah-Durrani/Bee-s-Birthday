@@ -143,17 +143,18 @@ body {
   .content {
     padding: 12px;
     gap: 12px;
-    min-height: 100vh; /* full height to allow bottom placement */
+    min-height: 100vh; /* take full screen height */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* push everything to the bottom */
   }
 
   .message-wrap {
-    max-height: 45vh;     /* slightly bigger box */
+    max-height: 45vh;       /* slightly bigger box */
     padding: 14px 16px;
-    overflow-y: auto;     /* scrollable if message is long */
-    margin: 0 auto;       /* center horizontally */
+    overflow-y: auto;       /* scrollable if message is long */
+    margin-top: auto;       /* pushes it to the bottom */
+    margin-bottom: 12px;    /* some space from bottom */
+    width: 90%;             /* optional: slightly narrower */
   }
 
   .message p {
@@ -161,6 +162,8 @@ body {
     line-height: 1.5;
   }
 }
+
+
 
 
 
