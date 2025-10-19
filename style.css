@@ -68,21 +68,22 @@ body {
 
 /* Message area */
 .message-wrap {
-  width: min(920px, 92%);
-  max-height: 42vh;
+  width: min(780px, 85%);
+  max-height: 22vh; /* smaller height so more background shows */
   overflow: auto;
-  background: rgba(255,255,255,0.1);
-  border-radius: 14px;
-  padding: 18px 20px;
-  box-shadow: var(--confetti-shadow);
-  backdrop-filter: blur(6px) saturate(120%);
-  color: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.08); /* more transparent */
+  border-radius: 12px;
+  padding: 10px 16px; /* smaller padding */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px) saturate(110%);
+  color: rgba(255, 255, 255, 0.95);
   text-align: left;
 }
 .message p {
-  margin-bottom: 12px;
-  line-height: 1.6;
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
+
 
 /* Controls */
 .controls { display: flex; gap: 12px; align-items: center; margin-top: 10px; }
@@ -141,5 +142,6 @@ body {
 @media (max-width: 700px) {
   .message-wrap { max-height: 50vh; }
 }
+
 
 
