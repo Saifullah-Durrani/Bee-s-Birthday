@@ -148,20 +148,35 @@ body {
     flex-direction: column;
   }
 
+@media (max-width: 700px) {
+  .content {
+    padding: 12px;
+    gap: 12px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* keep items from stretching fully */
+  }
+
   .message-wrap {
-    max-height: 45vh;       /* slightly bigger box */
-    padding: 14px 16px;
-    overflow-y: auto;       /* scrollable if message is long */
-    margin-top: auto;       /* pushes it to the bottom */
-    margin-bottom: 12px;    /* some space from bottom */
-    width: 90%;             /* optional: slightly narrower */
+    max-height: 32vh;         /* smaller box */
+    width: 90%;               /* slightly narrower */
+    padding: 12px 14px;       /* slightly smaller padding */
+    background: rgba(255, 255, 255, 0.05); /* more transparent */
+    backdrop-filter: blur(6px) saturate(120%);
+    border-radius: 14px;
+    margin: 12vh auto 0 auto; /* push slightly lower from top, leave bottom free */
+    overflow-y: auto;         /* scrollable if message is long */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   }
 
   .message p {
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 }
+
+
 
 
 
