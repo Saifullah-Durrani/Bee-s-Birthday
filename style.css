@@ -140,15 +140,26 @@ body {
 }
 
 @media (max-width: 700px) {
-  .message-wrap {
-    max-height: 25vh; /* smaller on mobile */
-    padding: 8px 12px; /* tighter padding */
+  .content {
+    padding: 20px 12px;   /* less padding on mobile */
+    gap: 12px;
+    min-height: auto;     /* remove full-screen stretch */
   }
+
+  .message-wrap {
+    max-height: 35vh;     /* smaller height for mobile */
+    padding: 10px 12px;
+    overflow-y: auto;     /* scroll if message is long */
+    margin: 0 auto;       /* center horizontally */
+  }
+
   .message p {
-    font-size: 0.9rem; /* smaller text for mobile */
+    font-size: 0.9rem;
     line-height: 1.4;
   }
 }
+
+
 
 
 
