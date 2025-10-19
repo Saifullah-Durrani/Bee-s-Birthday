@@ -69,7 +69,7 @@ body {
 /* Message area */
 .message-wrap {
   width: min(780px, 85%);
-  max-height: 22vh; /* smaller height so more background shows */
+  max-height: 42vh; /* smaller height so more background shows */
   overflow: auto;
   background: rgba(255, 255, 255, 0.08); /* more transparent */
   border-radius: 12px;
@@ -149,6 +149,7 @@ body {
     line-height: 1.4;
   }
 }
+
 
 
 
