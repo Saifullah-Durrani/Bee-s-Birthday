@@ -69,7 +69,7 @@ body {
 /* Message area */
 .message-wrap {
   width: min(920px, 92%);
-  max-height: 30vh;
+  max-height: 42vh;
   overflow: auto;
   background: rgba(255,255,255,0.1);
   border-radius: 14px;
@@ -141,4 +141,5 @@ body {
 @media (max-width: 700px) {
   .message-wrap { max-height: 50vh; }
 }
+
 
