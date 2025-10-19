@@ -165,7 +165,7 @@ body {
     background: rgba(255, 255, 255, 0.05); /* more transparent */
     backdrop-filter: blur(6px) saturate(120%);
     border-radius: 14px;
-    margin: 35vh auto 0 auto; /* push slightly lower from top, leave bottom free */
+    margin: 30vh auto 0 auto; /* push slightly lower from top, leave bottom free */
     overflow-y: auto;         /* scrollable if message is long */
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   }
@@ -175,6 +175,7 @@ body {
     line-height: 1.4;
   }
 }
+
 
 
 
