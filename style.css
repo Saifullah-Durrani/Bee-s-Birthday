@@ -140,8 +140,16 @@ body {
 }
 
 @media (max-width: 700px) {
-  .message-wrap { max-height: 50vh; }
+  .message-wrap {
+    max-height: 25vh; /* smaller on mobile */
+    padding: 8px 12px; /* tighter padding */
+  }
+  .message p {
+    font-size: 0.9rem; /* smaller text for mobile */
+    line-height: 1.4;
+  }
 }
+
 
 
 
